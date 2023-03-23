@@ -25,6 +25,7 @@ import { AlertHelper } from './helpers/alertas/alert.helpers';
 //modulos con componentes
 import { ClientesModule } from './clientes/clientes.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
 
@@ -34,7 +35,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SidenavComponent,
     InicioComponent,
     AccesosComponent,
-    PermisosComponent
+    PermisosComponent,
+    LoginComponent
 
   ],
   imports: [

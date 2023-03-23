@@ -4,10 +4,12 @@ import { MainClientesComponent } from './clientes/main-clientes/main-clientes.co
 import { PermisosComponent } from './permisos/permisos.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { AccesosComponent } from './accesos/accesos.component';
+import { LoginComponent } from './login/login.component';
 
 
 const routes: Routes = [
   { path: '', redirectTo: 'inicio', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent, pathMatch: 'full' },
   { path: 'inicio', component: InicioComponent },
   { path: 'clientes', component: MainClientesComponent },
   { path: 'permisos', component: PermisosComponent },
