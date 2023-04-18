@@ -1,0 +1,7 @@
+controladores: procesa las solicitudes desde el usuario.
+servicios: se pueden utilizar para compartir datos y funcionalidades.
+lazyloading: va ubicado en el routing de angular, donde component es remplazado por loadChildren cargando el componente de forma async.
+JWT: se puede guardar un dato JWT en el localStorage de Angular.
+promesa: funcionalidad que devuelve respuesta positiva o negativa de acuerdo a alguna condicion.
+await async: funcionalidad con propiedad await, quedará esperando respuesta para poder seguir con los demas procesos. 
+observable: permite la continuidad de funcionalidades del sistema, se mantienen pendientes y disponibles para cuando se quiera utilizar(datos, solicitudes http, clics de usuarios).

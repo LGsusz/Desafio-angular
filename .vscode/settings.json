@@ -1,0 +1,5 @@
+{
+    "diffEditor.ignoreTrimWhitespace": true,
+    "diffEditor.renderIndicators": true,
+    "diffEditor.renderMarginRevertIcon": true
+}

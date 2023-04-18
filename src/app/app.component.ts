@@ -7,7 +7,7 @@ import { SidenavComponent } from './shared/sidenav/sidenav.component'
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Honorarios';
+  title = 'LG';
   @ViewChild('menu') menu!: SidenavComponent;
 
   toggleMenu() {

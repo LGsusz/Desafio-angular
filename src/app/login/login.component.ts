@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit {
       pass: this.password
     }
 
-    console.log("objeto del login ??: ", login);
+    console.log("objeto del loginn ??: ", login);
 
     
       try {
