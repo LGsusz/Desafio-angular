@@ -9,34 +9,26 @@ import { MaterialModule } from './material.module';
 
 //componentes compartidos
 import { AppComponent } from './app.component';
-import { BodyComponent } from './body/body.component';
-import { SidenavComponent } from './shared/sidenav/sidenav.component';
-import { InicioComponent } from './inicio/inicio.component';
 import { ConfirmationService, MessageService } from 'primeng/api';
-import { AccesosComponent } from './accesos/accesos.component';
-import { PermisosComponent } from './permisos/permisos.component';
 
 
 
 //heplpers compartidos
-import { AlertHelper } from './helpers/alertas/alert.helpers';
 
 
 //modulos con componentes
-import { ClientesModule } from './clientes/clientes.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginComponent } from './login/login.component';
+import { Sidebar } from 'primeng/sidebar';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 @NgModule({
 
   declarations: [
     AppComponent,
-    BodyComponent,
-    SidenavComponent,
-    InicioComponent,
-    AccesosComponent,
-    PermisosComponent,
-    LoginComponent
+    LoginComponent,
+    SidebarComponent
 
   ],
   imports: [
@@ -47,14 +39,11 @@ import { LoginComponent } from './login/login.component';
     AppRoutingModule,
     PrimeNgModule,
     MaterialModule,
-    ClientesModule,
-
-
+    MatSidenavModule
   ],
   providers: [
     MessageService,
     ConfirmationService,
-    AlertHelper
   ],
   bootstrap: [AppComponent]
 })

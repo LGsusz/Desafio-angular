@@ -1,5 +1,4 @@
 import { Component, ViewChild } from '@angular/core';
-import { SidenavComponent } from './shared/sidenav/sidenav.component'
 
 @Component({
   selector: 'app-root',
@@ -8,10 +7,9 @@ import { SidenavComponent } from './shared/sidenav/sidenav.component'
 })
 export class AppComponent {
   title = 'LG';
-  @ViewChild('menu') menu!: SidenavComponent;
 
   toggleMenu() {
-    this.menu.toggle();
+    
   }
 
 }

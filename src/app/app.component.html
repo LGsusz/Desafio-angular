@@ -1,11 +1,31 @@
-<div class="navbar-header">
-    <button pButton type="button" icon="pi pi-bars" (click)="toggleMenu()"
-        class="p-button-rounded p-button-primary"></button>
-</div>
-
-<app-sidenav #menu></app-sidenav>
-<app-body></app-body>
-<!-- 
-<div>
-    <router-outlet></router-outlet>
-</div> -->
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav class="sidenav" #sidenav>
+      <div class="logo-container">
+        <img class="logo" src="https://via.placeholder.com/150x50.png?text=Logo" alt="Logo">
+        <h3 class="title">Mi aplicación</h3>
+      </div>
+      <mat-divider></mat-divider>
+      <mat-nav-list class="nav-list">
+        <a mat-list-item routerLink="/" routerLinkActive="active">
+          <mat-icon class="icon">home</mat-icon>
+          <span class="label">Inicio</span>
+        </a>
+        <a mat-list-item routerLink="/usuarios" routerLinkActive="active">
+          <mat-icon class="icon">people</mat-icon>
+          <span class="label">Usuarios</span>
+        </a>
+        <a mat-list-item routerLink="/operaciones" routerLinkActive="active">
+          <mat-icon class="icon">build</mat-icon>
+          <span class="label">Operaciones</span>
+        </a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <button mat-icon-button class="menu-button" (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <div class="main-content">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
